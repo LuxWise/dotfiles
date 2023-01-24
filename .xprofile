@@ -1,0 +1,6 @@
+sxhkd &
+picom &
+xorg &
+feh --bg-scale $HOME/Downloads/13723-minimalista.jpg &
+exec bspwm
+
