@@ -48,48 +48,6 @@ because we don't have keybindings for that yet:
 sudo pacman -S pulseaudio pavucontrol
 ```
 
-
-## Storage
-
-Another basic utility you might need is automounting external hard drives or
-USBs. For that I use **[udisks](https://wiki.archlinux.org/index.php/Udisks)**
-and **[udiskie](https://www.archlinux.org/packages/community/any/udiskie/)**.
-*udisks* is a dependency of *udiskie*, so we only need to install the last one.
-Install also **[ntfs-3g](https://wiki.archlinux.org/index.php/NTFS-3G)**
-package to read and write NTFS formatted drives:
-
-```bash
-sudo pacman -S udiskie ntfs-3g
-```
-
-## Network
-
-We have configured the network through *nmcli*, but a graphical frontend is
-more friendly. I use 
-
-```bash
-sudo pacman -S network-manager-applet
-```
-
-## Systray
-
-By default, you have a system tray in Qtile, but there's nothing running in it.
-You can launch the programs we've just installed like so:
-
-```bash
-udiskie -t &
-nm-applet &
-```
-
-Now you should see icons that you can click to configure drives and networking.
-Optionally, you can install tray icons for volume and battery:
-
-```bash
-sudo pacman -S volumeicon cbatticon
-volumeicon &
-cbatticon &
-```
-
 ## Xprofile
 
 As I have mentioned before, all these changes are not permanent. In order to
