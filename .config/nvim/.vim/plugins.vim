@@ -1,5 +1,9 @@
 call plug#begin('~/.config/nvim/.vim/plugged')
 
+" airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 " syntax
 Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
@@ -10,7 +14,9 @@ Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
 " Themes
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'audibleblink/hackthebox.vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Tree
 Plug 'scrooloose/nerdtree'
@@ -36,9 +42,14 @@ Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 
+" css-colors
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+
 " git
 Plug 'tpope/vim-fugitive'
-
 Plug 'tpope/vim-repeat'
+
+"Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
